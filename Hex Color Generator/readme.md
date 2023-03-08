@@ -7,6 +7,8 @@ This project will generate random Hex Colors and display the color on the body.
 We can easily generate RGB colors by generating random values using Math library and feeding it accordingly in the code.
 But to generate Hex colors we need to take a step further. What is that?
 
+Also how to implement click to copy?
+
 ## Learnings
 
 We can generate random Hexadecimal values by using the radix option in 'toString()' method.
@@ -14,6 +16,10 @@ We can generate random Hexadecimal values by using the radix option in 'toString
 Radix - Ranges between 2 and 36. The values above 10 will get converted to alphabets.
 
 Use substring(start, end) to truncate the values and use them as your hex value.
+
+We can also use .slice method instead of substring as it is a string value
+
+Learnt about navigator api and implemented the click to copy functionality to copy the hex code in a single click.
 
 ## Use case:
 

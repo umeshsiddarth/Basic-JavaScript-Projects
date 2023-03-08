@@ -1,7 +1,7 @@
 "use strict";
 
 let hexValue = document.querySelector(".hex");
-let copyBtn = document.querySelector(".copy");
+let copyBtn = document.querySelector(".fa-copy");
 const generate = document.querySelector(".generate");
 
 function randomColor() {
@@ -27,9 +27,9 @@ copyBtn.addEventListener("click", (e) => {
   e.preventDefault();
 
   navigator.clipboard.writeText(hexValue.textContent).then(() => {
-    copyBtn.textContent = "Copied";
+    copyBtn.style.backgroundColor = "green";
     setTimeout(() => {
-      copyBtn.textContent = "Copy";
-    }, 3000);
+      copyBtn.style.backgroundColor = "#fda085";
+    }, 2000);
   });
 });

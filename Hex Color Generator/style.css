@@ -53,6 +53,10 @@ button {
     box-shadow: 5px 5px 10px black;
 }
 
+button:first-child{
+    margin-right: 30px;
+}
+
 button:hover {
     background-color: #96e6a1 ;
     
@@ -63,12 +67,6 @@ button:active {
     box-shadow: 2px 2px 4px black;
 }
 
-.copy {
-    display: inline-block;
-    font-size: 1.5rem;
-    padding: 20px 0px;
-    width: 20%;
-    margin-bottom: 20px;
-    margin: 1rem auto;
-    border-radius: 10px;
+.fa-copy {
+    font-size: 1.7rem;
 }
