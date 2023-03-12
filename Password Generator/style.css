@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    color: aliceblue
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -14,7 +18,8 @@
 }
 
 .password-generator {
-    background-color: greenyellow;
+    /* background: linear-gradient(to right, #006466,#1b3a4b,#272640, #4d194d); */
+    background: radial-gradient( circle farthest-corner at 10% 20%,  rgba(100,130,159,1) 0%, rgba(103,56,96,1) 90% );
     padding: 2rem;
     width: 35rem;
     height: 35rem;
@@ -31,7 +36,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid aliceblue;
     padding: 1rem 0;
     font-size: 1.5rem;
 
@@ -57,10 +62,9 @@ h1 {
     color: white;
     padding: 1rem;
     border-radius: 10px;
-    border: none;
-    outline: none;
-    background-color: aqua;
-    
+    border: 2px solid black;
+    background-color: #affc41;
+    color: #3f3e3e;
 }
 
 
@@ -71,7 +75,8 @@ h1 {
     height: 100%;
     padding: 1.2rem .5rem;
     outline: none;
-    border: none;
+    border: 2px solid black;
+    border-left: none;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     cursor: pointer;
