@@ -12,7 +12,8 @@ const passOptLength = document.getElementById("length"),
   passOptNumber = document.getElementById("numbers"),
   passOptSymbol = document.getElementById("symbols"),
   generateBtn = document.querySelector(".generate"),
-  password = document.getElementById("password");
+  password = document.getElementById("password"),
+  copyBtn = document.querySelector(".fa");
 
 generateBtn.addEventListener("click", () => {
   let initialPassword = empty;
@@ -34,3 +35,18 @@ function generatePassword(passLength, initialPassword) {
   }
   return pass;
 }
+
+copyBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+
+  navigator.clipboard.writeText(password.value).then(() => {
+    copyBtn.classList.remove("fa-copy");
+    copyBtn.classList.add("fa-check");
+    copyBtn.style.color = "green";
+    setTimeout(() => {
+      copyBtn.style.color = "";
+      copyBtn.classList.remove("fa-check");
+      copyBtn.classList.add("fa-copy");
+    }, 1000);
+  });
+});
